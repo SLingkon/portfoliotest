@@ -1,112 +1,168 @@
-*{
-    margin: 0; padding: 0; font-family: 'Risque',sans-serif; box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Risque", sans-serif;
 }
-body{
-    width: 100%;
-    min-height: 100vh;
-    margin: 0 auto;
-    /* background-image: url('/images/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; */
-    background-color: #FCDE67;
+p {
+	color: #252727;
+	text-align: center;
+	text-align: justify;
+	font-weight: 100;
+	margin: 0 10px;
+}
+a {
+	text-decoration: none;
+	color: black;
+	display: flex;
+}
+a:hover {
+	text-decoration: none;
+	color: black;
+	display: flex;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+	background-color: #fcde67;
 }
 .container {
-    width: 1400px;
-    margin: 0 auto;
-    
+	margin: 0 10%;
 }
-nav{
-    margin-bottom: 0 auto;
-    background-color: #0078AA;
+.img-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 2%;
+}
+.img-container img {
+	width: 300px;
+	border: 2px solid black;
+	border-radius: 10px;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3);
+}
+.profile-container {
+	/* background-color: rebeccapurple; */
+}
+.info-container {
+	padding-top: 5px;
+	text-align: center;
+	width: 450px;
+	margin: auto;
+}
+.info-container h1 {
+	margin: 5px;
+	text-transform: capitalize;
+}
+.info-container h2 {
+	margin: 5px;
+	text-transform: capitalize;
+}
 
+/* navBar design start */
+nav {
+	margin: 0 10%;
 }
-.nav-container{
-    height: 112px;
-    display: flex;
-    align-items: center;
-    
+.nav-body {
+	margin-top: 10px;
+	width: 100%;
+	height: 80px;
+	background-color: #004faa;
 }
+
 .nav-items {
-    width: 540px;
-    height: 35px;
-    margin-left: auto;
-    display: flex; justify-content: space-around;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
 }
-.nav-items a{
-    font-size: 30px;
-    color: #000;
-    background-color: transparent;
-    text-decoration: none;
+.icons {
+	display: flex;
+	align-items: center;
 }
- .nav-items a:hover{
-    text-decoration: underline;
- }
-.brand-name h1{
-    font-size: 48px;
-    text-transform: uppercase;
+.nav-a {
+	width: 300px;
+	font-size: 1.4rem;
+	display: flex;
+	justify-content: space-around;
 }
-/* profile design */
-.profile-info{
-    width: 472px;
-    height: 580px;
-    margin: 0 auto;    
-}
-.picture-container{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    top: 80px;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 5px 3px 15px -7px #000000;
-    overflow: hidden;
-}
-.picture-container img
-{
-    width: 100%;
-    height: 100%;
-}
-.info-container{
-    position:relative;
-    top: 15%;
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	p {
+		color: #252727;
+		font-weight: 100;
+		margin: 0 10px;
+	}
+	html,
+	body {
+		width: 100%;
+		height: 100vh;
+		overflow: auto;
+		background-color: #fcde67;
+	}
+	.container {
+		margin: 0 10%;
+	}
+	.img-container {
+		display: flex;
+		justify-content: center;
+		margin-top: 2%;
+	}
+	.img-container img {
+		width: 200px;
+		border: 2px solid black;
+		border-radius: 10px;
+		box-sizing: border-box;
+		box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3);
+	}
+	.profile-container {
+		/* background-color: rebeccapurple; */
+	}
+	.info-container {
+		padding-top: 5px;
+		width: 300px;
+	}
+	.info-container h1 {
+		margin: 5px;
+		font-size: large;
+		text-transform: capitalize;
+	}
+	.info-container h2 {
+		margin: 5px;
+		font-size: large;
+		text-transform: capitalize;
+	}
 
-}
-.info-container{
-    font-size: 25px;
-    text-align: center;
-    line-height: 150%;
-    color: #4F4949;
-}
-.info-container h2{
-    font-size: 40px;
-    text-align: center;
-    line-height: 150%;
-    color: #000;
-}
-/* icons container */
-.icon-container{
-    display: flex; justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
+	/* navBar design start */
+	nav {
+		margin: 0 10%;
+	}
+	.nav-body {
+		margin-top: 10px;
+		width: 100%;
+		height: 80px;
+		background-color: #004faa;
+	}
 
-/* about container design */
-.about-container{
-    height: 100%;
-    width: 500px;
-    margin: 0 auto;
-    display: flex;justify-content: center;
-    margin-top: 20px;
-    text-align: center;
-}
-.about-container h3{
-    font-size: 32px;
-    letter-spacing: 10px;
-    
-}
-.about-container p{
-    font-size: 20px;
-    color: #0078AA;
+	.nav-items {
+		display: block;
+	}
+	.icons {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.icons img {
+		width: 60px;
+	}
+	.navitems-container {
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+	.nav-a {
+	}
 }
