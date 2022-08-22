@@ -4,7 +4,7 @@ function ProfilePic() {
 	return (
 		<>
 			<div className="img-container">
-				<img src={require('./images/img1.jpg')} alt="image" />
+				<img src={require('../images/img1.jpg')} alt="image" />
 			</div>
 		</>
 	);

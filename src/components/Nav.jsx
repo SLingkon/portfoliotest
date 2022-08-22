@@ -25,7 +25,7 @@ function Nav() {
 					<div className="navitems-container">
 						<div className="nav-a">
 							<a href="#">Home</a>
-							<a href="#">Projects</a>
+							<a href="#project">Projects</a>
 							<a href="#">Contact</a>
 							<a href="#">More</a>
 						</div>
